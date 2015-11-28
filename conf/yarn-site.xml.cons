@@ -263,7 +263,7 @@
 
   <property>
     <name>yarn.resourcemanager.scheduler.address</name>
-    <value>cspod319-02.redmond.corp.microsoft.com:8030</value>
+    <value>10.0.190:8030</value>
   </property>
 
   <property>
@@ -284,12 +284,12 @@
 
   <property>
     <name>yarn.resourcemanager.hostname</name>
-    <value>cspod319-02.redmond.corp.microsoft.com</value>
+    <value>10.0.190</value>
   </property>
 
   <property>
     <name>yarn.resourcemanager.address</name>
-    <value>cspod319-02.redmond.corp.microsoft.com:8032</value>
+    <value>10.0.190:8032</value>
   </property>
 
   <property>

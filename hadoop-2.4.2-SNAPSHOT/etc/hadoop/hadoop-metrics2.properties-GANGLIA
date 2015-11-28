@@ -27,10 +27,10 @@
 .sink.ganglia.dmax=jvm.metrics.threadsBlocked=70,jvm.metrics.memHeapUsedM=40
 
 # Hook up to the server
-namenode.sink.ganglia.servers=cspod316-02.redmond.corp.microsoft.com:8649
-#datanode.sink.ganglia.servers=cspod316-02.redmond.corp.microsoft.com:8649
-resourcemanager.sink.ganglia.servers=cspod316-02.redmond.corp.microsoft.com:8649
-nodemanager.sink.ganglia.servers=cspod316-02.redmond.corp.microsoft.com:8649
-historyserver.sink.ganglia.servers=cspod316-02.redmond.corp.microsoft.com:8649
-#maptask.sink.ganglia.servers=cspod316-02.redmond.corp.microsoft.com:8649
-#reducetask.sink.ganglia.servers=cspod316-02.redmond.corp.microsoft.com:8649
+namenode.sink.ganglia.servers=10.0.1.190:8649
+#datanode.sink.ganglia.servers=10.0.1.190:8649
+resourcemanager.sink.ganglia.servers=10.0.1.190:8649
+nodemanager.sink.ganglia.servers=10.0.1.190:8649
+historyserver.sink.ganglia.servers=10.0.1.190:8649
+#maptask.sink.ganglia.servers=10.0.1.190:8649
+#reducetask.sink.ganglia.servers=10.0.1.190:8649

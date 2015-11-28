@@ -263,12 +263,12 @@
 
   <property>
     <name>yarn.resourcemanager.resource-tracker.address</name>
-    <value>cspod319-02.redmond.corp.microsoft.com:8031</value>
+    <value>10.0.1.190:8031</value>
   </property>
 
   <property>
     <name>yarn.resourcemanager.scheduler.address</name>
-    <value>10.0.1.190</value>
+    <value>10.0.1.190:8030</value>
   </property>
 
   <property>
@@ -289,12 +289,12 @@
 
   <property>
     <name>yarn.resourcemanager.hostname</name>
-    <value>cspod319-02.redmond.corp.microsoft.com</value>
+    <value>10.0.1.190</value>
   </property>
 
   <property>
     <name>yarn.resourcemanager.address</name>
-    <value>cspod319-02.redmond.corp.microsoft.com:8032</value>
+    <value>10.0.1.190:8032</value>
   </property>
 
   <property>

@@ -21,7 +21,7 @@
 
   <property>
     <name>mapreduce.jobhistory.address</name>
-    <value>cspod319-02.redmond.corp.microsoft.com:10020</value>
+    <value>10.0.1.190:10020</value>
   </property>
 
   <property>
