@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+ <!-- Hive MySQL metadata store -->
+  <property>
+    <name>javax.jdo.option.ConnectionURL</name> 
+    <value>jdbc:mysql://localhost/tezpp_metastore_db?createDatabaseIfNotExist=true</value>
+  </property>
+  
+  <property>
+    <name>javax.jdo.option.ConnectionDriverName</name>
+    <value>com.mysql.jdbc.Driver</value>
+    <description>MySQL JBDC driver class</description>
+  </property>
+
+  <property>
+    <name>javax.jdo.option.ConnectionUserName</name>
+    <value>tezpp</value>
+  </property>
+
+  <property>
+    <name>javax.jdo.option.ConnectionPassword</name>
+    <value>tezpp</value>
+  </property>
+
+  <property>
+    <name>hive.aux.jars.path</name>
+    <value>file:///home/hadoop/yarnpp/hive-deps/mysql-connector-java.jar</value>
+  </property>
+
+  <!-- This is already set as the default warehouse directory
+  <property>
+    <name>hive.metastore.warehouse.dir</name>
+    <value>hdfs:///user/hive/warehouse</value>
+  </property>
+  -->
+
+
+
+ <!-- Derived by using hdp-configuration-utils.py -c 32 -m 128 -d 10 -k False  -->
+  <!--
+  <property>
+    <name>hive.tez.container.size</name>
+    <value>5120</value>  
+  </property>
+
+  <property>
+    <name>hive.tez.java.opts</name>
+    <value>-Xmx4096m</value>
+  </property>
+
+  
+  <property>
+    <name>hive.auto.convert.join.noconditionaltask.size</name>
+    <value>1342177000</value>
+  </property>
+  -->
+</configuration>
+

@@ -1,0 +1,12 @@
+{
+  "rack" : "default-rack",
+  "nodes" : [ {
+    "node" : "a2115.halxg.cloudera.com"
+  }, {
+    "node" : "a2116.halxg.cloudera.com"
+  }, {
+    "node" : "a2117.halxg.cloudera.com"
+  }, {
+    "node" : "a2118.halxg.cloudera.com"
+  } ]
+}

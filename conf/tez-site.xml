@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+  <!-- TODO: Replace -0.4.0-incubating with a variable that gets replaced by the
+             current version of Tez specified by deploy.sh -->
+  <property>
+    <name>tez.lib.uris</name>
+    <value>${fs.defaultFS}/apps/tez-0.4.1-incubating,${fs.defaultFS}/apps/tez-0.4.1-incubating/lib/</value>
+  </property>
+
+  
+  <!--
+  <property>
+    <name>tez.am.dag.scheduler.policy</name>
+    <value>PreferVerticesWithMoreTasks</value>
+    <description>Sets the scheduling policy for jobs, valid options are NaturalOrder, PreferVerticesWithMoreTasks, PreferVerticesWithLessTasks.  Both of the "Prefer" options obey the topological ordering of the vertices but break ties using the number of tasks per vertex.</description>
+  </property>
+  -->
+
+  <!-- Values from ./hdp-configuration-utils.py -c 32 -m 128 -d 10 -k False -->
+  <property>
+    <name>tez.am.resource.memory.mb</name>
+    <value>4096</value> <!-- Was 5120 -->
+  </property>
+
+  <property>
+    <name>tez.am.java.opts</name>
+    <value>-Xmx3276m</value> <!-- 4096 -->
+  </property>
+
+  <property>
+    <name>tez.am.container.reuse.enabled</name>
+    <value>false</value>
+  </property>
+
+</configuration>

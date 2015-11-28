@@ -1,0 +1,25 @@
+<allocations>
+  <property>
+    <name>yarn.scheduler.fair.assignmultiple</name>
+    <value>true</value>
+  </property>
+
+  <property>
+    <name>yarn.scheduler.fair.preemption</name>
+    <value>true</value>
+  </property>
+
+  <property>
+    <name>yarn.scheduler.fair.preemptionInterval</name>
+    <value>5000</value>
+  </property>
+
+  <property>
+    <name>yarn.scheduler.fair.waitTimeBeforeKill</name>
+    <value>30000</value>
+  </property>
+
+  <userMaxAppsDefault>5</userMaxAppsDefault>
+  <fairSharePreemptionTimeout>10</fairSharePreemptionTimeout>
+
+</allocations>

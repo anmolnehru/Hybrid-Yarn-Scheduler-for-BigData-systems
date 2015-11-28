@@ -1,0 +1,45 @@
+<allocations>
+  <property>
+    <name>yarn.scheduler.fair.assignmultiple</name>
+    <value>true</value>
+  </property>
+
+  <property>
+    <name>yarn.scheduler.fair.preemption</name>
+    <value>false</value>
+  </property>
+
+  <property>
+    <name>yarn.scheduler.fair.preemptionInterval</name>
+    <value>5000</value>
+  </property>
+
+  <property>
+    <name>yarn.scheduler.fair.waitTimeBeforeKill</name>
+    <value>30000</value>
+  </property>
+
+  <queue name="A">
+    <minResources>20000</minResources>
+    <maxResources>83500</maxResources>
+    <maxRunningApps>5</maxRunningApps>
+    <weight>2.0</weight>
+    <schedulingMode>fair</schedulingMode>
+  </queue>
+
+  <queue name="B">
+    <minResources>20000</minResources>
+    <maxResources>83500</maxResources>
+    <maxRunningApps>5</maxRunningApps>
+    <weight>2.0</weight>
+    <schedulingMode>fair</schedulingMode>
+  </queue>
+
+  <user name="hadoop">
+    <maxRunningApps>30</maxRunningApps>
+  </user>
+
+  <userMaxAppsDefault>5</userMaxAppsDefault>
+  <fairSharePreemptionTimeout>10</fairSharePreemptionTimeout>
+
+</allocations>

@@ -1,0 +1,376 @@
+<?xml version="1.0"?>
+
+<!-- Site specific YARN configuration properties -->
+
+<configuration>
+
+<!-- timeline server-->
+
+<property>
+  <description>The hostname of the Timeline service web application.</description>
+  <name>yarn.timeline-service.hostname</name>
+  <value>0.0.0.0</value>
+</property>
+
+<property>
+  <description>Address for the Timeline server to start the RPC server.</description>
+  <name>yarn.timeline-service.address</name>
+  <value>${yarn.timeline-service.hostname}:10200</value>
+</property>
+
+<property>
+  <description>The http address of the Timeline service web application.</description>
+  <name>yarn.timeline-service.webapp.address</name>
+  <value>${yarn.timeline-service.hostname}:8188</value>
+</property>
+
+<property>
+  <description>The https address of the Timeline service web application.</description>
+  <name>yarn.timeline-service.webapp.https.address</name>
+  <value>${yarn.timeline-service.hostname}:8190</value>
+</property>
+
+<property>
+  <description>Handler thread count to serve the client RPC requests.</description>
+  <name>yarn.timeline-service.handler-thread-count</name>
+  <value>10</value>
+</property>
+
+<property>
+  <description>Indicate to ResourceManager as well as clients whether
+  history-service is enabled or not. If enabled, ResourceManager starts
+  recording historical data that Timelien service can consume. Similarly,
+  clients can redirect to the history service when applications
+  finish if this is enabled.</description>
+  <name>yarn.timeline-service.generic-application-history.enabled</name>
+  <value>true</value>
+</property>
+
+<property>
+  <description>Store class name for history store, defaulting to file system
+  store</description>
+  <name>yarn.timeline-service.generic-application-history.store-class</name>
+  <value>org.apache.hadoop.yarn.server.applicationhistoryservice.FileSystemApplicationHistoryStore</value>
+</property>
+
+<property>
+  <description>Indicate to clients whether Timeline service is enabled or not.
+  If enabled, the TimelineClient library used by end-users will post entities
+  and events to the Timeline server.</description>
+  <name>yarn.timeline-service.enabled</name>
+  <value>true</value>
+</property>
+
+<property>
+  <description>Store class name for timeline store.</description>
+  <name>yarn.timeline-service.store-class</name>
+  <value>org.apache.hadoop.yarn.server.applicationhistoryservice.timeline.LeveldbTimelineStore</value>
+</property>
+
+<property>
+  <description>Enable age off of timeline store data.</description>
+  <name>yarn.timeline-service.ttl-enable</name>
+  <value>true</value>
+</property>
+
+<property>
+  <description>Time to live for timeline store data in milliseconds.</description>
+  <name>yarn.timeline-service.ttl-ms</name>
+  <value>604800000</value>
+</property>
+
+
+
+ <!-- YARN++ -->
+
+   <property>
+     <name>yarn.resourcemanager.cluster-monitor.interval-ms</name>
+     <value>2000</value>
+    </property>
+
+   <property>
+      <name>yarn.resourcemanager.cluster-monitor.enabled</name>
+      <value>true</value>
+      <description></description>
+   </property>
+
+   <property>
+       <name>yarn.nodemanager.resmonlogger-enabled</name>
+       <value>true</value>
+       <description></description>
+   </property>
+
+  <property>
+    <name>yarn.nodemanager.container-monitor.interval-ms</name>
+    <value>1000</value>
+  </property>
+
+  <property>
+    <name>yarn.nodemanager.monitor-check-interval-ms</name>
+    <value>1000</value>
+  </property>
+
+   <property>
+       <name>yarn.nodemanager.rmlocal-enabled</name>
+       <value>true</value>
+       <description>Runs a local proxy to  the RM</description>
+   </property>
+
+   <property>
+       <name>yarn.execution.execution-type</name>
+       <value>mixed_conservative_optimistic</value>
+   </property>
+
+   <property>
+      <name>yarn.execution.through-rmlocal</name>
+      <value>true</value>
+      <description>Whether to allocate using the RM local proxy</description>
+   </property>
+  
+   <property>
+      <name>yarn.execution.optimistic-containers-policy</name>
+      <value>only_conservative</value>
+      <description>Allowed values: only_conservative, only_optimistic, 
+      short_task_optimistic_containers, optimistic_containers_on_job_name,
+      random_optimistic_containers, rand_optimistic_containers_on_job_name</description>
+   </property>
+
+   <property>
+      <name>yarn.execution.random-policy-optimistic-percentage</name>
+      <value>0.7</value>
+   </property>
+
+   <property>
+      <name>yarn.nodemanager.limit-mem-optimistic</name>
+      <value>1.0</value>
+   </property>
+
+   <property>
+      <name>yarn.execution.short-task-threshold</name>
+      <value>10</value>
+   </property>
+
+   <property>
+       <name>yarn.execution.loaded-nodes-penalty</name>
+       <value>false</value>
+   </property>
+
+   <property>
+       <name>yarn.execution.loaded-nodes-exponential-penalty</name>
+       <value>false</value>
+   </property>
+
+   <property>
+       <name>yarn.execution.rebalance-nm-queues</name>
+       <value>false</value>
+       <description>Enables corrective mechanisms for rebalancing NM queues</description>
+   </property>
+
+   <property>
+      <name>yarn.execution.min-queue-time</name>
+      <value>100</value>
+   </property>
+
+   <property>
+      <name>yarn.execution.max-queue-time-policy</name>
+      <value>mean_sigma</value>
+      <description>Allowed values: mean_sigma, median_sigma</description>
+   </property>
+
+   <property>
+      <name>yarn.execution.reorder-queued-containers</name>
+      <value>false</value>
+   </property>
+
+   <property>
+      <name>yarn.execution.sigma-times-for-shortening</name>
+      <value>2.0</value>
+   </property>
+
+   <property>
+      <name>yarn.execution.change-utilization-interval</name>
+      <value>-1</value>
+   </property>
+
+   <property>
+      <name>yarn.execution.straggler-nodes</name>
+      <value>0</value>
+   </property>
+
+   <property>
+      <name>yarn.execution.task-execution-offline-stats</name>
+      <value>false</value>
+   </property>
+
+   <property>
+      <name>yarn.nodemanager.resource.cpu-vcores</name>
+      <value>32</value>
+   </property>
+
+   <property>
+      <name>yarn.nodemanager.rmlocal.max-optimistic-containers-per-am</name>
+      <value>600</value>
+   </property>
+
+   <property>
+      <name>yarn.nodemanager.max-optimistic-containers-per-node</name>
+      <value>30</value>
+   </property>
+
+   <property>
+      <name>yarn.nodemanager.max-optimistic-containers</name>
+      <value>7500</value>
+   </property>
+
+ <!-- -->
+
+ <!-- monitoring of resources -->
+ <property>
+        <name>yarn.nodemanager.resource-monitoring</name>
+        <value>/home/hadoop/yarnpp/conf/monitoring.sh</value>
+ </property>
+ <property>
+        <name>yarn.resourcemanager.nodemanagers.heartbeat-interval-ms</name>
+        <value>3000</value>
+ </property>
+ <property>
+        <name>yarn.nodemanager.resource-monitoring-out-prefix</name>
+        <value>/user/hadoop/monitoring</value>
+ </property>
+
+ <property>
+        <name>yarn.resourcemanager.cluster-monitor.topk-node</name>
+        <value>50</value>
+ </property>
+
+ <!-- monitoring of resources -->
+
+  <!-- disable physical/virtual memory checks in NM -->
+  <property>
+    <name>yarn.nodemanager.pmem-check-enabled</name>
+    <value>true</value>
+  </property>
+
+  <property>
+    <name>yarn.nodemanager.vmem-check-enabled</name>
+    <value>false</value>
+  </property>
+
+  <property>
+    <name>yarn.resourcemanager.resource-tracker.address</name>
+    <value>10.0.1.190</value>
+  </property>
+
+  <property>
+    <name>yarn.resourcemanager.scheduler.address</name>
+    <value>cspod319-02.redmond.corp.microsoft.com:8030</value>
+  </property>
+
+  <property>
+    <name>yarn.resourcemanager.scheduler.class</name>
+     <value>org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler</value>
+     <!-- <value>org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler</value> -->
+  </property>
+
+  <property>
+    <name>yarn.scheduler.fair.preemption</name>
+    <value>true</value>
+  </property>
+
+  <property>
+    <name>yarn.scheduler.should-check-slow-nodes</name>
+    <value>false</value>
+  </property>
+
+  <property>
+    <name>yarn.resourcemanager.hostname</name>
+    <value>cspod319-02.redmond.corp.microsoft.com</value>
+  </property>
+
+  <property>
+    <name>yarn.resourcemanager.address</name>
+    <value>cspod319-02.redmond.corp.microsoft.com:8032</value>
+  </property>
+
+  <property>
+    <name>yarn.nodemanager.local-dirs</name>
+    <value>/mnt/data/0/local/nm,/mnt/data/1/local/nm,/mnt/data/2/local/nm,/mnt/data/3/local/nm,/mnt/data/4/local/nm,/mnt/data/5/local/nm,/mnt/data/6/local/nm,/mnt/data/7/local/nm,/mnt/data/8/local/nm,/mnt/data/9/local/nm</value>
+  </property>
+
+  <property>
+    <name>yarn.nodemanager.log-dirs</name>
+    <value>/mnt/data/1/local/nm/logs</value>
+  </property>
+
+  <property>
+    <name>yarn.log-aggregation-enable</name>
+    <value>true</value>
+  </property>
+
+  <property>
+    <name>yarn.nodemanager.address</name>
+    <value>0.0.0.0:0</value>
+  </property>
+
+  <property>
+    <name>yarn.nodemanager.resource.memory-mb</name>
+    <value>42000</value>
+    <description>the amount of memory on the NodeManager in MiB</description>
+  </property>
+
+  <property>
+    <name>yarn.scheduler.minimum-allocation-mb</name>
+    <value>4096</value> <!-- Was 4096 -->
+  </property>
+
+  <property>
+    <name>yarn.scheduler.maximum-allocation-mb</name>
+    <value>16384</value>
+  </property>
+
+  <!-- "am" is application master. These configure the memory used for the MR
+       job's application master. -->
+
+  <property>
+    <name>yarn.app.mapreduce.am.resource.mb</name>
+    <value>4096</value>
+  </property>
+
+  <property>
+    <name>yarn.app.mapreduce.am.command-opts</name>
+    <value>-Xmx3276m</value> <!-- Was -Xmx3276m -->
+  </property>
+
+  <!-- /am -->
+
+
+  <property>
+    <name>yarn.nodemanager.remote-app-log-dir</name>
+    <value>/app-logs</value>
+  </property>
+
+  <!--
+  <property>
+    <name>yarn.nodemanager.aux-services</name>
+    <value>mapreduce_shuffle,rsrcmonitoring</value>
+  </property>
+  !-->
+
+  <property>
+    <name>yarn.nodemanager.aux-services</name>
+    <value>mapreduce_shuffle</value>
+  </property>
+
+ <!--
+  <property>
+    <name>yarn.nodemanager.aux-services.rsrcmonitoring.class</name>
+    <value>org.apache.hadoop.rsrcmonitoring.main.RsrcMonitoring</value>
+  </property>
+  -->
+
+  <property>
+    <name>yarn.nodemanager.delete.debug-delay-sec</name>
+    <value>3600</value>
+  </property>
+
+</configuration>

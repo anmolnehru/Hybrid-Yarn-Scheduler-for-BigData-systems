@@ -1,0 +1,113 @@
+ 
+  <property>
+    <name>yarn.scheduler.capacity.root.fastjobs.queues</name>
+    <value>cA_besteffort,cB_besteffort,cC_besteffort,cD_besteffort,cE_besteffort,fb2009_besteffort,fb2010_besteffort,yahoo_besteffort</value>
+  </property>
+
+  <property>
+    <name>yarn.scheduler.capacity.root.fastjobs.cA_besteffort.capacity</name>
+    <value>1</value>
+  </property>
+  <property>
+    <name>yarn.scheduler.capacity.root.fastjobs.cA_besteffort.user-limit-factor</name>
+    <value>10</value>
+  </property>
+  <property>
+    <name>yarn.scheduler.capacity.root.fastjobs.cA_besteffort.maximum-capacity</name>
+    <value>1</value>
+  </property>
+
+  <property>
+    <name>yarn.scheduler.capacity.root.fastjobs.cB_besteffort.capacity</name>
+    <value>100</value>
+  </property>
+  <property>
+    <name>yarn.scheduler.capacity.root.fastjobs.cB_besteffort.user-limit-factor</name>
+    <value>10</value>
+  </property>
+  <property>
+    <name>yarn.scheduler.capacity.root.fastjobs.cB_besteffort.maximum-capacity</name>
+    <value>100</value>
+  </property>
+
+  <property>
+    <name>yarn.scheduler.capacity.root.fastjobs.cC_besteffort.capacity</name>
+    <value>100</value>
+  </property>
+  <property>
+    <name>yarn.scheduler.capacity.root.fastjobs.cC_besteffort.user-limit-factor</name>
+    <value>10</value>
+  </property>
+  <property>
+    <name>yarn.scheduler.capacity.root.fastjobs.cC_besteffort.maximum-capacity</name>
+    <value>100</value>
+  </property>
+
+
+  <property>
+    <name>yarn.scheduler.capacity.root.fastjobs.cD_besteffort.capacity</name>
+    <value>100</value>
+  </property>
+  <property>
+    <name>yarn.scheduler.capacity.root.fastjobs.cD_besteffort.user-limit-factor</name>
+    <value>10</value>
+  </property>
+  <property>
+    <name>yarn.scheduler.capacity.root.fastjobs.cD_besteffort.maximum-capacity</name>
+    <value>100</value>
+  </property>
+
+  <property>
+    <name>yarn.scheduler.capacity.root.fastjobs.cE_besteffort.capacity</name>
+    <value>100</value>
+  </property>
+  <property>
+    <name>yarn.scheduler.capacity.root.fastjobs.cE_besteffort.user-limit-factor</name>
+    <value>10</value>
+  </property>
+  <property>
+    <name>yarn.scheduler.capacity.root.fastjobs.cE_besteffort.maximum-capacity</name>
+    <value>100</value>
+  </property>
+
+
+  <property>
+    <name>yarn.scheduler.capacity.root.fastjobs.fb2009_besteffort.capacity</name>
+    <value>14</value>
+  </property>
+  <property>
+    <name>yarn.scheduler.capacity.root.fastjobs.fb2009_besteffort.user-limit-factor</name>
+    <value>10</value>
+  </property>
+  <property>
+    <name>yarn.scheduler.capacity.root.fastjobs.fb2009_besteffort.maximum-capacity</name>
+    <value>14</value>
+  </property>
+
+  <property>
+    <name>yarn.scheduler.capacity.root.fastjobs.fb2010_besteffort.capacity</name>
+    <value>100</value>
+  </property>
+  <property>
+    <name>yarn.scheduler.capacity.root.fastjobs.fb2010_besteffort.user-limit-factor</name>
+    <value>10</value>
+  </property>
+  <property>
+    <name>yarn.scheduler.capacity.root.fastjobs.fb2010_besteffort.maximum-capacity</name>
+    <value>100</value>
+  </property>
+
+  <property>
+    <name>yarn.scheduler.capacity.root.fastjobs.yahoo_besteffort.capacity</name>
+    <value>22</value>
+  </property>
+  <property>
+    <name>yarn.scheduler.capacity.root.fastjobs.yahoo_besteffort.user-limit-factor</name>
+    <value>10</value>
+  </property>
+  <property>
+    <name>yarn.scheduler.capacity.root.fastjobs.yahoo_besteffort.maximum-capacity</name>
+    <value>22</value>
+  </property>
+
+</configuration>

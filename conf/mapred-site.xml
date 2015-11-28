@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<!-- Put site-specific property overrides in this file. -->
+
+<configuration>
+
+ <!-- YARN ++ -->
+
+  <property>
+   <name>mapreduce.job.execution-type</name>
+   <value>only_conservative</value>
+  </property>
+    
+  <property>
+   <name>mapreduce.job.through-rmlocal</name>
+   <value>false</value>
+  </property>
+
+ <!--   --> 
+
+  <property>
+    <name>mapreduce.jobhistory.address</name>
+    <value>cspod319-02.redmond.corp.microsoft.com:10020</value>
+  </property>
+
+  <property>
+    <name>mapreduce.jobhistory.webapp.address</name>
+    <value>10.0.1.190</value>
+  </property>
+
+  <property>
+    <name>mapreduce.framework.name</name>
+    <value>yarn-tez</value>
+  </property>
+
+  <property>
+    <name>mapreduce.map.cpu.vcores</name>
+    <value>1</value>
+  </property>
+
+  <property>
+    <name>mapreduce.reduce.cpu.vcores</name>
+    <value>1</value>
+  </property>
+
+  <property>
+    <name>mapreduce.map.java.opts</name>
+    <value>-Xmx3276m</value> <!-- Was -Xmx3276m -->
+  </property>
+
+  <property>
+    <name>mapreduce.map.memory.mb</name>
+    <value>4096</value>
+  </property>
+
+  <property>
+    <name>mapreduce.task.io.sort.mb</name>
+    <value>400</value> <!-- Was 400 -->
+  </property>
+
+  <property>
+    <name>mapreduce.reduce.java.opts</name>
+    <value>-Xmx3276m</value> <!-- Was -Xmx3276 -->
+  </property>
+
+  <property>
+    <name>mapreduce.reduce.memory.mb</name>
+    <value>4096</value> <!-- Was 4096 -->
+  </property>
+
+
+  <property>
+      <name>mapreduce.map.speculative</name>
+      <value>false</value>
+  </property>
+
+  <property>
+      <name>mapreduce.reduce.speculative</name>
+      <value>false</value>
+  </property>
+
+
+</configuration>
