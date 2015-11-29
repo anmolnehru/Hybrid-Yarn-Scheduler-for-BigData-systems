@@ -20,7 +20,7 @@
 
 <property>
   <name>hadoop.tmp.dir</name>
-  <value>/home/ubuntu/storage/data/local/tmp </value>
+  <value>/home/ubuntu/storage/data/local/tmp</value>
 </property>
 
 <property>
