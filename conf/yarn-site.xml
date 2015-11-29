@@ -298,12 +298,12 @@
   </property>
   <property>
     <name>yarn.nodemanager.local-dirs</name>
-    <value>/mnt/data/0/local/nm,/mnt/data/1/local/nm,/mnt/data/2/local/nm,/mnt/data/3/local/nm,/mnt/data/4/local/nm,/mnt/data/5/local/nm,/mnt/data/6/local/nm,/mnt/data/7/local/nm,/mnt/data/8/local/nm,/mnt/data/9/local/nm</value>
+    <value>/home/ubuntu/storage/data/local/nm</value>
   </property>
 
   <property>
     <name>yarn.nodemanager.log-dirs</name>
-    <value>/mnt/data/1/local/nm/logs</value>
+    <value>/home/ubuntu/logs/appe</value>
   </property>
 
   <property>

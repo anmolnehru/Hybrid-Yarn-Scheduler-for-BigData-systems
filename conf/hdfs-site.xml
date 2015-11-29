@@ -20,12 +20,12 @@
 
 <property>
   <name>dfs.namenode.name.dir</name>
-  <value>/mnt/data/0/local/hdfs/name</value>
+  <value>/home/ubuntu/storage/hdfs/mercury_nn</value>
 </property>
 
 <property>
   <name>dfs.datanode.data.dir</name>
-  <value>/mnt/data/0/local/hdfs/data,/mnt/data/1/local/hdfs/data,/mnt/data/2/local/hdfs/data,/mnt/data/3/local/hdfs/data,/mnt/data/4/local/hdfs/data,/mnt/data/5/local/hdfs/data,/mnt/data/6/local/hdfs/data,/mnt/data/7/local/hdfs/data,/mnt/data/8/local/hdfs/data,/mnt/data/9/local/hdfs/data</value>
+  <value>/home/ubuntu/storage/hdfs/mercury_dn</value>
 </property>
 
 <property>

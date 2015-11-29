@@ -18,7 +18,7 @@
 
 # Stop all hadoop daemons.  Run this on master node.
 
-echo "This script is Deprecated. Instead use stop-dfs.sh and stop-yarn.sh"
+#echo "This script is Deprecated. Instead use stop-dfs.sh and stop-yarn.sh"
 
 bin=`dirname "${BASH_SOURCE-$0}"`
 bin=`cd "$bin"; pwd`
