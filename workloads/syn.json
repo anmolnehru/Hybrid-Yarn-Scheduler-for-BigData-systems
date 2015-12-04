@@ -1,0 +1,56 @@
+{
+  "description" : "Many short jobs gridmix",
+  "num_jobs" : 7000,
+  "trace_duration" : 3600,
+  "rand_seed" : 2,
+  "workloads" : [
+    {
+      "workload_name" : "short-jobs-workload",
+      "fallback_queue_name" : "default",
+      "plan_name" : "default",
+      "workload_weight": 1.0,
+      "description" : "Short jobs workload",
+      "job_classes" : [
+        {
+          "class_name" : "sleep-jobs-2sec",
+          "job_count" : 100,
+          "num_all_machines" : 800,
+          "time_window" : 108,
+          "chance_of_reservation" : 1.0,
+          "deadline_factor_avg" : 10.0,
+          "deadline_factor_stddev" : 0.001,
+          "in_avg" : 1048500,
+          "in_stddev" : 17466,
+          "shuffle_avg" : 10085000,
+          "shuffle_stddev" : 162666,
+          "out_avg" : 10485700,
+          "out_stddev" : 1876000,
+          "dur_avg" : 100,
+          "dur_stddev" : 20,
+          "mtime_avg" : 2,
+          "mtime_stddev" : 0.1,
+          "rtime_avg" : 3,
+          "rtime_stddev" : 6,
+          "gang_size" : 1,
+          "mtasks_avg" : 200,
+          "mtasks_stddev" : 0.1,
+          "rtasks_avg" : 0,
+          "rtasks_stddev" : 0.001,
+          "map_max_memory_avg" : 1024,
+          "map_max_memory_stddev" : 0.001,
+          "reduce_max_memory_avg" : 1024,
+          "reduce_max_memory_stddev" : 0.001,
+          "bytes_per_map_record" : 512,
+          "bytes_per_shuffle_record" : 512,
+          "bytes_per_reduce_record" : 1024,
+          "value_avg" : 100000000,
+          "value_stddev" : 100
+        }
+       ],
+      "time_distribution" : [
+        { "time" : 1, "jobs" : 100 },
+        { "time" : 3600, "jobs" : 0.01 }
+      ]
+	}
+   ]
+}
