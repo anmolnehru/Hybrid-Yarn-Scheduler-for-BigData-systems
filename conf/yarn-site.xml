@@ -303,7 +303,7 @@
 
   <property>
     <name>yarn.nodemanager.log-dirs</name>
-    <value>/home/ubuntu/logs/appe</value>
+    <value>/home/hadoop/yarnpp/yarn-logs</value>
   </property>
 
   <property>

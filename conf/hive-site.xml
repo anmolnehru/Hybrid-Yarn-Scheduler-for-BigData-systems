@@ -6,7 +6,20 @@
     <name>javax.jdo.option.ConnectionURL</name> 
     <value>jdbc:mysql://localhost/tezpp_metastore_db?createDatabaseIfNotExist=true</value>
   </property>
-  
+
+
+  <property>
+    <name>hive.session.history.enabled</name>
+    <value>true</value>
+    <description>Whether to log Hive query, query plan, runtime statistics etc.</description>
+  </property>
+
+  <property>
+    <name>javax.jdo.option.ConnectionURL</name>
+    <value>jdbc:mysql://10.0.1.190:3306/metastore?createDatabaseIfNotExist=true</value>
+    <description>the URL of the MySQL database</description>
+  </property>
+
   <property>
     <name>javax.jdo.option.ConnectionDriverName</name>
     <value>com.mysql.jdbc.Driver</value>
@@ -15,12 +28,12 @@
 
   <property>
     <name>javax.jdo.option.ConnectionUserName</name>
-    <value>tezpp</value>
+    <value>hive</value>
   </property>
 
   <property>
     <name>javax.jdo.option.ConnectionPassword</name>
-    <value>tezpp</value>
+    <value>hive</value>
   </property>
 
   <property>

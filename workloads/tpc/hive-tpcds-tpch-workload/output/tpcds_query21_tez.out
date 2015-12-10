@@ -1,0 +1,24 @@
+
+Logging initialized using configuration in jar:file:/home/hadoop/yarnpp/hive-1.2.1/lib/hive-common-1.2.1.jar!/hive-log4j.properties
+Hive history file=/tmp/ubuntu/hive_job_log_26a38d69-406b-419e-bf81-c0555723abd9_989749117.txt
+Exception in thread "main" java.lang.RuntimeException: java.io.IOException: Previous writer likely failed to write hdfs://10.0.1.190:8020/tmp/hive/ubuntu/_tez_session_dir/26a38d69-406b-419e-bf81-c0555723abd9/mysql-connector-java.jar. Failing because I am unlikely to write too.
+	at org.apache.hadoop.hive.ql.session.SessionState.start(SessionState.java:535)
+	at org.apache.hadoop.hive.cli.CliDriver.run(CliDriver.java:677)
+	at org.apache.hadoop.hive.cli.CliDriver.main(CliDriver.java:621)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:212)
+Caused by: java.io.IOException: Previous writer likely failed to write hdfs://10.0.1.190:8020/tmp/hive/ubuntu/_tez_session_dir/26a38d69-406b-419e-bf81-c0555723abd9/mysql-connector-java.jar. Failing because I am unlikely to write too.
+	at org.apache.hadoop.hive.ql.exec.tez.DagUtils.localizeResource(DagUtils.java:980)
+	at org.apache.hadoop.hive.ql.exec.tez.DagUtils.addTempResources(DagUtils.java:860)
+	at org.apache.hadoop.hive.ql.exec.tez.DagUtils.localizeTempFilesFromConf(DagUtils.java:803)
+	at org.apache.hadoop.hive.ql.exec.tez.TezSessionState.refreshLocalResourcesFromConf(TezSessionState.java:219)
+	at org.apache.hadoop.hive.ql.exec.tez.TezSessionState.open(TezSessionState.java:147)
+	at org.apache.hadoop.hive.ql.exec.tez.TezSessionState.open(TezSessionState.java:116)
+	at org.apache.hadoop.hive.ql.session.SessionState.start(SessionState.java:532)
+	... 7 more
+Command exited with non-zero status 1
+11.31user 0.94system 0:32.63elapsed 37%CPU (0avgtext+0avgdata 343364maxresident)k
+0inputs+472outputs (0major+67170minor)pagefaults 0swaps

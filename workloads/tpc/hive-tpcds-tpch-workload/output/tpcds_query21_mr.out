@@ -1,0 +1,59 @@
+
+Logging initialized using configuration in jar:file:/home/hadoop/yarnpp/hive-1.2.1/lib/hive-common-1.2.1.jar!/hive-log4j.properties
+Hive history file=/tmp/ubuntu/hive_job_log_57cd8214-22c3-41ca-b36f-11ddfbee80fa_1491063942.txt
+OK
+Time taken: 1.563 seconds
+Query ID = ubuntu_20151206165234_c0e5b2bc-8d16-4cbd-a903-b32f44046aa5
+Total jobs = 2
+15/12/06 16:52:42 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+15/12/06 16:52:42 WARN conf.Configuration: file:/tmp/ubuntu/57cd8214-22c3-41ca-b36f-11ddfbee80fa/hive_2015-12-06_16-52-34_933_8763128170408904734-1/-local-10011/jobconf.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+15/12/06 16:52:42 WARN conf.Configuration: file:/tmp/ubuntu/57cd8214-22c3-41ca-b36f-11ddfbee80fa/hive_2015-12-06_16-52-34_933_8763128170408904734-1/-local-10011/jobconf.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+Execution log at: /tmp/ubuntu/ubuntu_20151206165234_c0e5b2bc-8d16-4cbd-a903-b32f44046aa5.log
+2015-12-06 16:52:43	Starting to launch local task to process map join;	maximum memory = 15270936576
+2015-12-06 16:52:44	Dump the side-table for tag: 1 with group count: 0 into file: file:/tmp/ubuntu/57cd8214-22c3-41ca-b36f-11ddfbee80fa/hive_2015-12-06_16-52-34_933_8763128170408904734-1/-local-10008/HashTable-Stage-4/MapJoin-mapfile01--.hashtable
+2015-12-06 16:52:44	Uploaded 1 File to: file:/tmp/ubuntu/57cd8214-22c3-41ca-b36f-11ddfbee80fa/hive_2015-12-06_16-52-34_933_8763128170408904734-1/-local-10008/HashTable-Stage-4/MapJoin-mapfile01--.hashtable (260 bytes)
+2015-12-06 16:52:44	Dump the side-table for tag: 1 with group count: 0 into file: file:/tmp/ubuntu/57cd8214-22c3-41ca-b36f-11ddfbee80fa/hive_2015-12-06_16-52-34_933_8763128170408904734-1/-local-10008/HashTable-Stage-4/MapJoin-mapfile11--.hashtable
+2015-12-06 16:52:44	Uploaded 1 File to: file:/tmp/ubuntu/57cd8214-22c3-41ca-b36f-11ddfbee80fa/hive_2015-12-06_16-52-34_933_8763128170408904734-1/-local-10008/HashTable-Stage-4/MapJoin-mapfile11--.hashtable (260 bytes)
+2015-12-06 16:52:44	Dump the side-table for tag: 0 with group count: 0 into file: file:/tmp/ubuntu/57cd8214-22c3-41ca-b36f-11ddfbee80fa/hive_2015-12-06_16-52-34_933_8763128170408904734-1/-local-10008/HashTable-Stage-4/MapJoin-mapfile20--.hashtable
+2015-12-06 16:52:44	Uploaded 1 File to: file:/tmp/ubuntu/57cd8214-22c3-41ca-b36f-11ddfbee80fa/hive_2015-12-06_16-52-34_933_8763128170408904734-1/-local-10008/HashTable-Stage-4/MapJoin-mapfile20--.hashtable (260 bytes)
+2015-12-06 16:52:44	End of local task; Time Taken: 1.348 sec.
+Execution completed successfully
+MapredLocal task succeeded
+Launching Job 1 out of 2
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1449346705437_3622, Tracking URL = http://anmol-vm1-new:8088/proxy/application_1449346705437_3622/
+Kill Command = /home/hadoop/yarnpp/hadoop-2.4.2-SNAPSHOT/bin/hadoop job  -kill job_1449346705437_3622
+Hadoop job information for Stage-4: number of mappers: 0; number of reducers: 0
+2015-12-06 16:53:09,080 Stage-4 map = 0%,  reduce = 0%
+2015-12-06 16:53:33,277 Stage-4 map = 100%,  reduce = 0%
+2015-12-06 16:53:40,617 Stage-4 map = 100%,  reduce = 100%
+Ended Job = job_1449346705437_3622
+Launching Job 2 out of 2
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1449346705437_3623, Tracking URL = http://anmol-vm1-new:8088/proxy/application_1449346705437_3623/
+Kill Command = /home/hadoop/yarnpp/hadoop-2.4.2-SNAPSHOT/bin/hadoop job  -kill job_1449346705437_3623
+Hadoop job information for Stage-5: number of mappers: 0; number of reducers: 0
+2015-12-06 16:53:46,460 Stage-5 map = 0%,  reduce = 0%
+2015-12-06 16:53:53,885 Stage-5 map = 100%,  reduce = 0%
+2015-12-06 16:54:01,389 Stage-5 map = 100%,  reduce = 100%
+Ended Job = job_1449346705437_3623
+MapReduce Jobs Launched: 
+Stage-Stage-4:  HDFS Read: 0 HDFS Write: 0 SUCCESS
+Stage-Stage-5:  HDFS Read: 0 HDFS Write: 0 SUCCESS
+Total MapReduce CPU Time Spent: 0 msec
+OK
+Time taken: 86.532 seconds
+32.59user 3.47system 1:36.13elapsed 37%CPU (0avgtext+0avgdata 654364maxresident)k
+72inputs+151152outputs (0major+140685minor)pagefaults 0swaps

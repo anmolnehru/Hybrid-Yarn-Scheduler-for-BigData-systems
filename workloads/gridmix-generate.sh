@@ -14,6 +14,10 @@ hadoop fs -rm -r $LOCATION/gridmix
 hadoop fs -rm /user/hadoop/$JOB_DESC_FILENAME
 hadoop fs -put $TRACE /user/hadoop
 
+#Anmol
+hadoop fs -rm -r /user/hadoop/gridmix-kon/input
+#This change is necessitated by error we get from the prompt
+
 export HADOOP_CLASSPATH=$HADOOP_CLASSPATH:$HADOOP_YARN_HOME/share/hadoop/tools/lib/*:/home/hadoop/commons-math3-3.1.1.jar
 
 echo "launching gridmix"
