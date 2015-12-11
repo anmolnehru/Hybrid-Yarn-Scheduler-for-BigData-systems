@@ -1,7 +1,7 @@
 #!/bin/bash
 
 TRACE=${1:-syn.json}
-OPTIMISTIC_POLICY=${2:-only_optimistic}
+OPTIMISTIC_POLICY=${2:-only_conservative}
 LOCATION=${3:-/user/hadoop/gridmix-kon}
 
 JOB_DESC_FILENAME=`basename $TRACE`
