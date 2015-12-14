@@ -1,7 +1,7 @@
 {
   "description" : "Many short jobs gridmix",
-  "num_jobs" : 7000,
-  "trace_duration" : 3600,
+  "num_jobs" : 10,
+  "trace_duration" : 360,
   "rand_seed" : 2,
   "workloads" : [
     {
@@ -13,8 +13,8 @@
       "job_classes" : [
         {
           "class_name" : "sleep-jobs-2sec",
-          "job_count" : 100,
-          "num_all_machines" : 800,
+          "job_count" : 10,
+          "num_all_machines" : 4,
           "time_window" : 108,
           "chance_of_reservation" : 1.0,
           "deadline_factor_avg" : 10.0,
@@ -49,7 +49,7 @@
        ],
       "time_distribution" : [
         { "time" : 1, "jobs" : 100 },
-        { "time" : 3600, "jobs" : 0.01 }
+        { "time" : 360, "jobs" : 0.01 }
       ]
 	}
    ]

@@ -1,0 +1,97 @@
+#############################################
+100 Mbps, Deafult Latency
+Sun Dec 13 21:18:50 UTC 2015
+Deleted /user/hadoop/syn.json
+
+
+Execution Summary:-
+Input trace: hdfs://10.0.1.190:8020/user/hadoop/syn.json
+Input trace signature: b2d6f4ec965e770085e3f9e4a01f7287
+Total number of jobs in trace: 10
+Expected input data size: 1 G
+Input data statistics: Uncompressed input data size: 1 G, Number of files: 4
+Total number of jobs processed: 7
+Total number of successful jobs: 5
+Total number of failed jobs: 2
+Total number of lost jobs: 0
+Total number of map tasks launched: 1403
+Total number of reduce task launched: 0
+Gridmix start time: 12/13/15 9:19 PM
+Gridmix end time: 12/13/15 10:02 PM
+Gridmix simulation start time: 12/13/15 9:19 PM
+Gridmix runtime: 43mins, 12sec
+Time spent in initialization (data-gen etc): 20mins, 12sec
+Time spent in simulation: 23mins, 0sec
+Gridmix configuration parameters: -libjars /home/hadoop/yarnpp/hadoop-2.4.2-SNAPSHOT/share/hadoop/tools/lib/hadoop-rumen-2.4.2-SNAPSHOT.jar -Dgridmix.job-producer.is.synthetic=true -Dgridmix.job-submission.policy=REPLAY -Dgridmix.job.type=LOADJOB -Dgridmix.job-submission.default-queue=default -Dgridmix.sleep.fake-locations=3 -Dgridmix.compression-emulation.enable=false -Dgridmix.job.seq=1 -Dgridmix.client.submit.threads=20 -Dgridmix.client.pending.queue.depth=10 -generate 1073741824 /user/hadoop/gridmix-kon /user/hadoop/syn.json
+Gridmix job submission policy: REPLAY
+Gridmix resolver: org.apache.hadoop.mapred.gridmix.SubmitterUserResolver
+
+Cluster Summary:-
+JobTracker: local
+FileSystem: hdfs://10.0.1.190:8020
+Number of blacklisted trackers: 0
+Number of active trackers: 3
+Max map task capacity: 30
+Max reduce task capacity: 6
+
+
+Sun Dec 13 22:02:13 UTC 2015
+Time taken = 2603
+
+#############################################
+100 Mbps, 1s delay
+Sun Dec 13 22:02:13 UTC 2015
+Deleted /user/hadoop/gridmix-kon/gridmix
+Deleted /user/hadoop/syn.json
+Deleted /user/hadoop/gridmix-kon/input
+
+
+Execution Summary:-
+Input trace: hdfs://10.0.1.190:8020/user/hadoop/syn.json
+Input trace signature: ebc3211318d7a5e12718e7649cd0363d
+Total number of jobs in trace: 10
+Expected input data size: 1 G
+Input data statistics: Uncompressed input data size: 1 G, Number of files: 4
+Total number of jobs processed: 3
+Total number of successful jobs: 0
+Total number of failed jobs: 3
+Total number of lost jobs: 0
+Total number of map tasks launched: 602
+Total number of reduce task launched: 0
+Gridmix start time: 12/13/15 10:02 PM
+Gridmix end time: 12/13/15 10:45 PM
+Gridmix simulation start time: 12/13/15 10:02 PM
+Gridmix runtime: 42mins, 57sec
+Time spent in initialization (data-gen etc): 22mins, 39sec
+Time spent in simulation: 19mins, 59sec
+Gridmix configuration parameters: -libjars /home/hadoop/yarnpp/hadoop-2.4.2-SNAPSHOT/share/hadoop/tools/lib/hadoop-rumen-2.4.2-SNAPSHOT.jar -Dgridmix.job-producer.is.synthetic=true -Dgridmix.job-submission.policy=REPLAY -Dgridmix.job.type=LOADJOB -Dgridmix.job-submission.default-queue=default -Dgridmix.sleep.fake-locations=3 -Dgridmix.compression-emulation.enable=false -Dgridmix.job.seq=1 -Dgridmix.client.submit.threads=20 -Dgridmix.client.pending.queue.depth=10 -generate 1073741824 /user/hadoop/gridmix-kon /user/hadoop/syn.json
+Gridmix job submission policy: REPLAY
+Gridmix resolver: org.apache.hadoop.mapred.gridmix.SubmitterUserResolver
+
+Cluster Summary:-
+JobTracker: local
+FileSystem: hdfs://10.0.1.190:8020
+Number of blacklisted trackers: 0
+Number of active trackers: 4
+Max map task capacity: 40
+Max reduce task capacity: 8
+
+
+Sun Dec 13 22:45:38 UTC 2015
+Time taken = 2605
+
+#############################################
+100 Mbps, 100ms  Latency
+Sun Dec 13 22:45:38 UTC 2015
+Sun Dec 13 22:47:05 UTC 2015
+Time taken = 87
+
+#############################################
+100 Mbps, 10ms Latency
+Sun Dec 13 22:47:05 UTC 2015
+Sun Dec 13 22:58:10 UTC 2015
+Time taken = 665
+
+#############################################
+100 Mbps, 1ms Latency
+Sun Dec 13 22:58:10 UTC 2015

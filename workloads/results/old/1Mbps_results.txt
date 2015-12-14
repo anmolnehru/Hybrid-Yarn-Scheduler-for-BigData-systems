@@ -1,0 +1,98 @@
+#############################################
+100 Mbps, Deafult Latency
+Sun Dec 13 21:18:16 UTC 2015
+Deleted /user/hadoop/gridmix-kon/gridmix
+Deleted /user/hadoop/syn.json
+Deleted /user/hadoop/gridmix-kon/input
+
+
+Execution Summary:-
+Input trace: hdfs://10.0.1.190:8020/user/hadoop/syn.json
+Input trace signature: bba631f754027ce9c4479ab5fca3bc25
+Total number of jobs in trace: 10
+Expected input data size: 1 G
+Input data statistics: Uncompressed input data size: 1 G, Number of files: 4
+Total number of jobs processed: 6
+Total number of successful jobs: 6
+Total number of failed jobs: 0
+Total number of lost jobs: 0
+Total number of map tasks launched: 1202
+Total number of reduce task launched: 0
+Gridmix start time: 12/13/15 9:18 PM
+Gridmix end time: 12/13/15 9:58 PM
+Gridmix simulation start time: 12/13/15 9:18 PM
+Gridmix runtime: 40mins, 7sec
+Time spent in initialization (data-gen etc): 17mins, 46sec
+Time spent in simulation: 22mins, 20sec
+Gridmix configuration parameters: -libjars /home/hadoop/yarnpp/hadoop-2.4.2-SNAPSHOT/share/hadoop/tools/lib/hadoop-rumen-2.4.2-SNAPSHOT.jar -Dgridmix.job-producer.is.synthetic=true -Dgridmix.job-submission.policy=REPLAY -Dgridmix.job.type=LOADJOB -Dgridmix.job-submission.default-queue=default -Dgridmix.sleep.fake-locations=3 -Dgridmix.compression-emulation.enable=false -Dgridmix.job.seq=1 -Dgridmix.client.submit.threads=20 -Dgridmix.client.pending.queue.depth=10 -generate 1073741824 /user/hadoop/gridmix-kon /user/hadoop/syn.json
+Gridmix job submission policy: REPLAY
+Gridmix resolver: org.apache.hadoop.mapred.gridmix.SubmitterUserResolver
+
+Cluster Summary:-
+JobTracker: local
+FileSystem: hdfs://10.0.1.190:8020
+Number of blacklisted trackers: 0
+Number of active trackers: 3
+Max map task capacity: 30
+Max reduce task capacity: 6
+
+
+Sun Dec 13 21:58:41 UTC 2015
+Time taken = 2425
+
+#############################################
+100 Mbps, 1s delay
+Sun Dec 13 21:58:42 UTC 2015
+Deleted /user/hadoop/gridmix-kon/gridmix
+Deleted /user/hadoop/syn.json
+Deleted /user/hadoop/gridmix-kon/input
+
+
+Execution Summary:-
+Input trace: hdfs://10.0.1.190:8020/user/hadoop/syn.json
+Input trace signature: 99154564847b7178e32d7a21c3c384d0
+Total number of jobs in trace: 10
+Expected input data size: 1 G
+Input data statistics: Uncompressed input data size: 512 M, Number of files: 2
+Total number of jobs processed: 6
+Total number of successful jobs: 3
+Total number of failed jobs: 3
+Total number of lost jobs: 0
+Total number of map tasks launched: 1202
+Total number of reduce task launched: 0
+Gridmix start time: 12/13/15 9:59 PM
+Gridmix end time: 12/13/15 10:43 PM
+Gridmix simulation start time: 12/13/15 9:59 PM
+Gridmix runtime: 44mins, 13sec
+Time spent in initialization (data-gen etc): 14mins, 18sec
+Time spent in simulation: 29mins, 54sec
+Gridmix configuration parameters: -libjars /home/hadoop/yarnpp/hadoop-2.4.2-SNAPSHOT/share/hadoop/tools/lib/hadoop-rumen-2.4.2-SNAPSHOT.jar -Dgridmix.job-producer.is.synthetic=true -Dgridmix.job-submission.policy=REPLAY -Dgridmix.job.type=LOADJOB -Dgridmix.job-submission.default-queue=default -Dgridmix.sleep.fake-locations=3 -Dgridmix.compression-emulation.enable=false -Dgridmix.job.seq=1 -Dgridmix.client.submit.threads=20 -Dgridmix.client.pending.queue.depth=10 -generate 1073741824 /user/hadoop/gridmix-kon /user/hadoop/syn.json
+Gridmix job submission policy: REPLAY
+Gridmix resolver: org.apache.hadoop.mapred.gridmix.SubmitterUserResolver
+
+Cluster Summary:-
+JobTracker: local
+FileSystem: hdfs://10.0.1.190:8020
+Number of blacklisted trackers: 0
+Number of active trackers: 4
+Max map task capacity: 40
+Max reduce task capacity: 8
+
+
+Sun Dec 13 22:43:22 UTC 2015
+Time taken = 2680
+
+#############################################
+100 Mbps, 100ms  Latency
+Sun Dec 13 22:43:22 UTC 2015
+Deleted /user/hadoop/gridmix-kon/gridmix
+Deleted /user/hadoop/syn.json
+Deleted /user/hadoop/gridmix-kon/input
+Sun Dec 13 22:45:41 UTC 2015
+Time taken = 139
+
+#############################################
+100 Mbps, 10ms Latency
+Sun Dec 13 22:45:41 UTC 2015
+Deleted /user/hadoop/gridmix-kon/gridmix
+Deleted /user/hadoop/syn.json
