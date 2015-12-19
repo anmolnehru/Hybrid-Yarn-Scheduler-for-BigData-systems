@@ -38,7 +38,13 @@
     <name>mapreduce.map.cpu.vcores</name>
     <value>1</value>
   </property>
-
+  <property>
+    <name>mapred.hosts.exclude</name>
+    <value>/home/hadoop/yarnpp/conf/mapred.exclude</value>
+    <description>Names a file that contains the list of hosts that
+      should be excluded by the jobtracker.  If the value is empty, no
+      hosts are excluded.</description>
+  </property>
   <property>
     <name>mapreduce.reduce.cpu.vcores</name>
     <value>1</value>

@@ -1,0 +1,5 @@
+#############################################
+100 Mbps, 1s delay
+Sun Dec 13 23:46:29 UTC 2015
+Deleted /user/hadoop/syn.json
+Sun Dec 13 23:47:01 UTC 2015

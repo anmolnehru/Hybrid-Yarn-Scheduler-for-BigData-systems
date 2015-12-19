@@ -1,0 +1,30 @@
+#############################################
+100 Mbps, Deafult Latency
+Mon Dec 14 01:01:54 UTC 2015
+Deleted /user/hadoop/syn.json
+Time taken = 28268
+
+#############################################
+100 Mbps, 50ms delay
+Deleted /user/hadoop/syn.json
+Deleted /user/hadoop/syn.json
+Time taken = 33
+
+###########Time taken = 45
+
+###########################################Deleted /user/hadoop/syn.jDeleDeleted /user/hadoop/syn.jTime taken = 489
+
+#############################################
+100 Mbps, 1ms Latency
+Deleted /user/hadoop/syn.json
+Time taken = 56
+
+/hadoop/syn.json
+Time taken = 12
+
+#############################################
+100 Mbps, 1ms Latency
+Deleted /user/hadoop/syn.json
+Deleted /user/hadoop/syn.json
+Time taken = 299
+

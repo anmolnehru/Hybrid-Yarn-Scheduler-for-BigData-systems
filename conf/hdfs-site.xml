@@ -48,6 +48,23 @@
   <value>1024</value>
 </property>
 
+<property>
+
+   <name>dfs.datanode.max.xcievers</name>
+
+   <value>4096</value>
+
+   <description>PRIVATE CONFIG VARIABLE</description>
+
+</property>
+
+
+<property>
+ <name>dfs.hosts.exclude</name>
+ <value>/home/hadoop/yarnpp/conf/exclude</value>
+ <final>true</final>
+</property>
+
 <!--
 <property>
   <name>dfs.datanode.failed.volumes.tolerated</name>

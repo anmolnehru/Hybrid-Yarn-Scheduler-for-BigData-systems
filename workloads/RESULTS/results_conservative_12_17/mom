@@ -1,0 +1,23 @@
+total 9624
+drwxrwxrwx  6 root   root      4096 Dec 16 15:14 .
+drwxrwxrwx 15 root   root      4096 Dec 14 20:13 ..
+-rwxrwxr-x  1 ubuntu ubuntu     375 Dec 14 14:15 100Mbps_fail.sh
+-rwxrwxr-x  1 ubuntu ubuntu    2689 Dec 14 17:35 100Mbps.sh
+-rwxrwxr-x  1 ubuntu ubuntu    2576 Dec 14 17:28 10Mbps.sh
+-rwxrwxr-x  1 ubuntu ubuntu    2536 Dec 14 17:30 1Gbps.sh
+-rwxrwxr-x  1 ubuntu ubuntu    2539 Dec 14 17:32 1Mbps.sh
+drwxrwxr-x  2 ubuntu ubuntu    4096 Dec 16 15:14 conservative
+-rw-rw-r--  1 ubuntu ubuntu 9759879 Dec 12 22:36 gridmix_generate_log_12_11_15
+-rwxrwxrwx  1 root   root      1249 Dec 14 02:14 gridmix-generate.sh
+-rwxrwxrwx  1 root   root      1208 Dec 14 17:14 gridmix-sleepjobs.sh
+-rwxrwxrwx  1 ubuntu ubuntu    1660 Dec 13 01:13 jd-2sec.json
+-rwxrwxr-x  1 ubuntu ubuntu     276 Dec 16 15:14 master_job_submit.sh
+-rw-rw-r--  1 ubuntu ubuntu    1275 Dec 16 15:14 mom
+-rwxrwxr-x  1 ubuntu ubuntu    2652 Dec 14 17:35 non_gda.sh
+drwxrwxr-x  5 ubuntu ubuntu    4096 Dec 16 02:06 RESULTS
+-rw-rw-r--  1 ubuntu ubuntu     634 Dec 15 22:06 silent
+-rwxrwxrwx  1 ubuntu ubuntu    1659 Dec 15 02:59 syn.json
+drwxrwxr-x  3 ubuntu ubuntu    4096 Dec 14 18:16 tmp
+drwxrwxrwx  3 ubuntu ubuntu    4096 Dec 11 04:05 tpc
+-rw-rw-r--  1 ubuntu ubuntu      85 Dec 14 14:10 vim.trim
+-rw-------  1 ubuntu ubuntu   12288 Dec 15 03:06 .vim.trim.swo

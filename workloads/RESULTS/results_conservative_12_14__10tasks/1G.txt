@@ -1,0 +1,25 @@
+#############################################
+1Gbps, Deafult Latency
+Deleted /user/hadoop/syn.json
+Time taken = 146
+
+#############################################
+1Gbps, 50ms delay
+Deleted /user/hadoop/syn.json
+Time taken = 147
+
+#############################################
+1Gbps, 100ms  Latency
+Deleted /user/hadoop/syn.json
+Time taken = 146
+
+#############################################
+1Gbps, 10ms Latency
+Deleted /user/hadoop/syn.json
+Time taken = 146
+
+#############################################
+1Gbps, 1ms Latency
+Deleted /user/hadoop/syn.json
+Time taken = 146
+

@@ -1,0 +1,81 @@
+#############################################
+100 Mbps
+sudo tc qdisc del dev eth0 root 0
+sudo tc qdisc del dev eth0 ingress 2
+sudo tc class del dev eth0 root 2
+sudo tc filter del dev eth0 root 2
+sudo tc qdisc del dev eth0 root 2
+sudo tc qdisc del dev eth0 ingress 2
+sudo tc class del dev eth0 root 2
+sudo tc filter del dev eth0 root 2
+sudo tc qdisc add dev eth0 root handle 1: htb default 12
+sudo tc qdisc add dev eth0 root handle 1: htb default 12 0
+sudo tc class add dev eth0 parent 1: classid 1:1 htb rate 100mbps ceil 200mbps
+sudo tc class add dev eth0 parent 1: classid 1:1 htb rate 100mbps ceil 200mbps 0
+sudo tc filter add dev eth0 protocol ip parent 1:0 prio 1 u32 match ip dst 10.0.1.0/24 flowid 1:1
+sudo tc filter add dev eth0 protocol ip parent 1:0 prio 1 u32 match ip dst 10.0.1.0/24 flowid 1:1 0
+sudo tc qdisc del dev eth0 root 0
+sudo tc qdisc del dev eth0 ingress 2
+sudo tc class del dev eth0 root 2
+sudo tc filter del dev eth0 root 2
+sudo tc qdisc del dev eth0 root 2
+sudo tc qdisc del dev eth0 ingress 2
+sudo tc class del dev eth0 root 2
+sudo tc filter del dev eth0 root 2
+sudo tc qdisc add dev eth0 root handle 1: htb default 12
+sudo tc qdisc add dev eth0 root handle 1: htb default 12 0
+sudo tc class add dev eth0 parent 1: classid 1:1 htb rate 100mbps ceil 200mbps
+sudo tc class add dev eth0 parent 1: classid 1:1 htb rate 100mbps ceil 200mbps 0
+sudo tc filter add dev eth0 protocol ip parent 1:0 prio 1 u32 match ip dst 10.0.1.0/24 flowid 1:1
+sudo tc filter add dev eth0 protocol ip parent 1:0 prio 1 u32 match ip dst 10.0.1.0/24 flowid 1:1 0
+sudo tc qdisc del dev eth0 root 0
+sudo tc qdisc del dev eth0 ingress 2
+sudo tc class del dev eth0 root 2
+sudo tc filter del dev eth0 root 2
+sudo tc qdisc del dev eth0 root 2
+sudo tc qdisc del dev eth0 ingress 2
+sudo tc class del dev eth0 root 2
+sudo tc filter del dev eth0 root 2
+sudo tc qdisc add dev eth0 root handle 1: htb default 12
+sudo tc qdisc add dev eth0 root handle 1: htb default 12 0
+sudo tc class add dev eth0 parent 1: classid 1:1 htb rate 100mbps ceil 200mbps
+sudo tc class add dev eth0 parent 1: classid 1:1 htb rate 100mbps ceil 200mbps 0
+sudo tc filter add dev eth0 protocol ip parent 1:0 prio 1 u32 match ip dst 10.0.1.0/24 flowid 1:1
+sudo tc filter add dev eth0 protocol ip parent 1:0 prio 1 u32 match ip dst 10.0.1.0/24 flowid 1:1 0
+Deleted /user/hadoop/gridmix-kon/gridmix
+Deleted /user/hadoop/syn.json
+
+
+Execution Summary:-
+Input trace: hdfs://10.0.1.190:8020/user/hadoop/syn.json
+Input trace signature: ed702cfb944282fa7b0a6708118f07eb
+Total number of jobs in trace: 15
+Expected input data size: N/A
+Input data statistics: Uncompressed input data size: 1.0 G, Number of files: 3
+Total number of jobs processed: 15
+Total number of successful jobs: 15
+Total number of failed jobs: 0
+Total number of lost jobs: 0
+Total number of map tasks launched: 3007
+Total number of reduce task launched: 0
+Gridmix start time: 12/18/15 5:21 PM
+Gridmix end time: 12/18/15 5:41 PM
+Gridmix simulation start time: 12/18/15 5:21 PM
+Gridmix runtime: 19mins, 33sec
+Time spent in initialization (data-gen etc): 2sec
+Time spent in simulation: 19mins, 29sec
+Gridmix configuration parameters: -libjars /home/hadoop/yarnpp/hadoop-2.4.2-SNAPSHOT/share/hadoop/tools/lib/hadoop-rumen-2.4.2-SNAPSHOT.jar -Dgridmix.job-producer.is.synthetic=true -Dgridmix.job-submission.policy=REPLAY -Dgridmix.job.type=SLEEPJOB -Dgridmix.job-submission.default-queue=default -Dgridmix.sleep.fake-locations=10 -Dgridmix.compression-emulation.enable=false -Dgridmix.job.seq=1 -Dgridmix.client.submit.threads=20 -Dgridmix.client.pending.queue.depth=10 /user/hadoop/gridmix-kon /user/hadoop/syn.json
+Gridmix job submission policy: REPLAY
+Gridmix resolver: org.apache.hadoop.mapred.gridmix.SubmitterUserResolver
+
+Cluster Summary:-
+JobTracker: local
+FileSystem: hdfs://10.0.1.190:8020
+Number of blacklisted trackers: 0
+Number of active trackers: 3
+Max map task capacity: 30
+Max reduce task capacity: 6
+
+
+Time taken = 1184
+

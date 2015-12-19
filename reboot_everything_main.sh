@@ -9,4 +9,5 @@ hadoop fs -mkdir /apps
 hadoop fs -mkdir /apps/tez-0.4.1-incubating
 cd /home/hadoop/yarnpp
 hadoop fs -put tez-0.4.1-incubating/* /apps/tez-0.4.1-incubating
- 
+hadoop fs -put /home/hadoop/yarnpp/workloads/syn.json /user/hadoop
+hadoop fs -put /home/hadoop/yarnpp/workloads/syn.json /user/hadoop 
